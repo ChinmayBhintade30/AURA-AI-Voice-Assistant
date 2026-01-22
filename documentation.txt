@@ -1,0 +1,26 @@
+ song = c.lower().split(" ")[1]
+
+ you know that 
+ c.lower will first make all characters in lower case 
+
+ if the user tells or says play skyfall
+
+
+then split function will split the words play and skyfall in two different words 
+and make a list of it 
+['play',"skyfall"] like this and [1] means accessing the first index word of the list
+
+so the 1st index word is skyfall in the list so it will route to the word in the dictionary of the music library file
+and it will  get the value of the key which is nothing but the url of the youtube video song
+
+
+
+   elif c.lower().startswith("play"):
+        song = c.lower().split(" ")[1]
+        link = musicLibrary.music[song]
+
+
+this means that--> if the word starst with play then , the song variable will store the value of split list of index 1 
+which will be the name of the song , so 
+that name will be open by music library in link variable  , and then link will be open in 
+webbrowser libray
